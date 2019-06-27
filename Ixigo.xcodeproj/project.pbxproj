@@ -9,20 +9,20 @@
 /* Begin PBXBuildFile section */
 		247C1D9E9F79C470E3C644CC /* Pods_Ixigo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AC8414B1212E16015001F1 /* Pods_Ixigo.framework */; };
 		329A76FC22C39C18008BD5D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A76FB22C39C18008BD5D2 /* AppDelegate.swift */; };
-		329A76FE22C39C18008BD5D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A76FD22C39C18008BD5D2 /* ViewController.swift */; };
 		329A770122C39C18008BD5D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329A76FF22C39C18008BD5D2 /* Main.storyboard */; };
 		329A770322C39C22008BD5D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329A770222C39C22008BD5D2 /* Assets.xcassets */; };
 		329A770622C39C22008BD5D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329A770422C39C22008BD5D2 /* LaunchScreen.storyboard */; };
+		32A8374E22C4A27000952047 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8374D22C4A27000952047 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		329A76F822C39C18008BD5D2 /* Ixigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ixigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		329A76FB22C39C18008BD5D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		329A76FD22C39C18008BD5D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		329A770022C39C18008BD5D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		329A770222C39C22008BD5D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		329A770522C39C22008BD5D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		329A770722C39C22008BD5D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32A8374D22C4A27000952047 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		9A85EB44516D845E8A5FFF42 /* Pods-Ixigo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ixigo.debug.xcconfig"; path = "Target Support Files/Pods-Ixigo/Pods-Ixigo.debug.xcconfig"; sourceTree = "<group>"; };
 		D2AC8414B1212E16015001F1 /* Pods_Ixigo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ixigo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4ED135A59B2A7E0746A3AC8 /* Pods-Ixigo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ixigo.release.xcconfig"; path = "Target Support Files/Pods-Ixigo/Pods-Ixigo.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				329A76FB22C39C18008BD5D2 /* AppDelegate.swift */,
-				329A76FD22C39C18008BD5D2 /* ViewController.swift */,
+				32A8374D22C4A27000952047 /* TableViewController.swift */,
 				329A76FF22C39C18008BD5D2 /* Main.storyboard */,
 				329A770222C39C22008BD5D2 /* Assets.xcassets */,
 				329A770422C39C22008BD5D2 /* LaunchScreen.storyboard */,
@@ -208,8 +208,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				329A76FE22C39C18008BD5D2 /* ViewController.swift in Sources */,
 				329A76FC22C39C18008BD5D2 /* AppDelegate.swift in Sources */,
+				32A8374E22C4A27000952047 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
