@@ -18,6 +18,7 @@ class APICaller {
     }
     
     func getResponse() {
+        FlightsData.flightsData.flights = []
         let URLString = "https://www.ixigo.com/sampleFlightData"
         if let url = URL(string: URLString) {
             if let data = try? Data(contentsOf: url){

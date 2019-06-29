@@ -9,10 +9,15 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         APICaller.apiCaller.getResponse()
+        refreshControl = UIRefreshControl()
+        refreshControl?.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+        refreshControl?.attributedTitle = NSAttributedString(string: "Fetching Flights Details...")
+        refreshControl?.tintColor = UIColor(red:0.25, green:0.72, blue:0.85, alpha:1.0)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -34,7 +39,8 @@ class TableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FlightCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FlightCell", for: indexPath) as! FlightTableViewCell
+        cell.configureCell(flight: FlightsData.flightsData.flights[indexPath.row])
 
         // Configure the cell...
 
@@ -86,5 +92,11 @@ class TableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @objc func refreshData() {
+        APICaller.apiCaller.getResponse()
+        tableView.reloadData()
+        refreshControl?.endRefreshing()
+    }
 
 }
