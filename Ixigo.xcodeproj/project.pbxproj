@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		247C1D9E9F79C470E3C644CC /* Pods_Ixigo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AC8414B1212E16015001F1 /* Pods_Ixigo.framework */; };
+		3293660022C648E500E5FB68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329365FF22C648E500E5FB68 /* Assets.xcassets */; };
 		329A76FC22C39C18008BD5D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A76FB22C39C18008BD5D2 /* AppDelegate.swift */; };
 		329A770122C39C18008BD5D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329A76FF22C39C18008BD5D2 /* Main.storyboard */; };
-		329A770322C39C22008BD5D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329A770222C39C22008BD5D2 /* Assets.xcassets */; };
 		329A770622C39C22008BD5D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329A770422C39C22008BD5D2 /* LaunchScreen.storyboard */; };
 		32A8374E22C4A27000952047 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8374D22C4A27000952047 /* TableViewController.swift */; };
 		32A8375022C4A79000952047 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8374F22C4A79000952047 /* APICaller.swift */; };
@@ -20,10 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		329365FF22C648E500E5FB68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		329A76F822C39C18008BD5D2 /* Ixigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ixigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		329A76FB22C39C18008BD5D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		329A770022C39C18008BD5D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		329A770222C39C22008BD5D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		329A770522C39C22008BD5D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		329A770722C39C22008BD5D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32A8374D22C4A27000952047 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -69,13 +69,13 @@
 		329A76FA22C39C18008BD5D2 /* Ixigo */ = {
 			isa = PBXGroup;
 			children = (
+				329365FF22C648E500E5FB68 /* Assets.xcassets */,
 				329A76FB22C39C18008BD5D2 /* AppDelegate.swift */,
 				32A8375322C4D0A500952047 /* FlightsModel.swift */,
 				32A8375122C4C93A00952047 /* Maps.swift */,
 				32A8374F22C4A79000952047 /* APICaller.swift */,
 				32A8374D22C4A27000952047 /* TableViewController.swift */,
 				329A76FF22C39C18008BD5D2 /* Main.storyboard */,
-				329A770222C39C22008BD5D2 /* Assets.xcassets */,
 				32A8375522C4E6DF00952047 /* FlightTableViewCell.swift */,
 				329A770422C39C22008BD5D2 /* LaunchScreen.storyboard */,
 				329A770722C39C22008BD5D2 /* Info.plist */,
@@ -161,7 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				329A770622C39C22008BD5D2 /* LaunchScreen.storyboard in Resources */,
-				329A770322C39C22008BD5D2 /* Assets.xcassets in Resources */,
+				3293660022C648E500E5FB68 /* Assets.xcassets in Resources */,
 				329A770122C39C18008BD5D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
