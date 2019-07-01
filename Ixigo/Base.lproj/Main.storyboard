@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,10 +14,11 @@
         <scene sceneID="i9x-e7-hxk">
             <objects>
                 <tableViewController id="Fbb-nH-WZa" customClass="TableViewController" customModule="Ixigo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FxZ-sg-8Lo">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FxZ-sg-8Lo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="v6M-J5-DX4"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FlightCell" rowHeight="91" id="gFk-ws-CuK" customClass="FlightTableViewCell" customModule="Ixigo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="91"/>
@@ -134,7 +136,13 @@
                             <outlet property="delegate" destination="Fbb-nH-WZa" id="rA5-Xj-0ln"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="0wA-KV-ykp"/>
+                    <navigationItem key="navigationItem" id="gdR-y5-Ak9">
+                        <barButtonItem key="rightBarButtonItem" title="Sort By" id="4XQ-dw-vJY">
+                            <connections>
+                                <action selector="onClickSortBy:" destination="Fbb-nH-WZa" id="VL3-5C-ez2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="39L-Z6-d88" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
